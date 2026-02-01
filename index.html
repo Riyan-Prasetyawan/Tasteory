@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasteory - Where Cravings Are Respected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Tasteory</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="btn-primary" style="display: none;">Book Your Event</a>
+      <!-- Hidden in desktop specific place if moved or just keep standard -->
+      <!-- Only showing hamburger here, the btn-primary is usually outside nav-links but for mobile we might want to hide it or keep it. The CSS edit hid the .navbar .btn-primary in mobile. -->
+      <a href="contact.html" class="btn-primary desktop-only">Book Your Event</a>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero container">
+    <div class="hero-content">
+      <h1 class="hero-title">A Place Where Cravings Are Respected, Palates Are Surprised</h1>
+      <p class="hero-subtitle">Tasteory turns ordinary meals into lasting moments through balance, boldness, and beauty.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Book Your Event</a>
+        <a href="#menu" class="btn-outline">Explore Our Menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero.png" alt="Delicious Salami on Fork">
+    </div>
+  </header>
+
+  <!-- Feature Cards -->
+  <section class="container">
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="feature-card green">
+        <div>
+          <h3>Fork Theory</h3>
+          <p>Garden-fresh flavors fused.</p>
+        </div>
+        <img src="assets/veg.png" alt="Fork Theory">
+        <div class="feature-price">Starting at $12.50</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card orange">
+        <div>
+          <h3>Melt District</h3>
+          <p>Cheesy, indulgent, love at first slice.</p>
+        </div>
+        <img src="assets/street.png" alt="Melt District">
+        <div class="feature-price">Starting at $14.50</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card blue">
+        <div>
+          <h3>Fork Scoop</h3>
+          <p>Ocean delights, fresh and raw.</p>
+        </div>
+        <img src="assets/bowl.png" alt="Fork Scoop">
+        <div class="feature-price">Starting at $18.00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container about-grid">
+      <div class="about-content">
+        <div
+          style="color: var(--primary-orange); font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">
+          About Tasteory</div>
+        <h2>We believe great food tells a story — yours begins here.</h2>
+        <p>At Tasteory, we combine bold flavors, premium ingredients, and creative presentation to bring you
+          mouthwatering dishes made with love. From satisfying comfort classics to innovative food fusions, our menu is
+          built for those who crave taste and quality in every bite.</p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div style="display: flex; align-items: center; gap: -5px;">
+              <div style="width:30px; height:30px; background:#ddd; border-radius:50%; border:2px solid white;"></div>
+              <div
+                style="width:30px; height:30px; background:#ccc; border-radius:50%; border:2px solid white; margin-left:-10px;">
+              </div>
+              <div
+                style="width:30px; height:30px; background:#bbb; border-radius:50%; border:2px solid white; margin-left:-10px;">
+              </div>
+            </div>
+            <strong>1200+</strong>
+            <span style="font-size: 14px; color: #666;">Happy Customers</span>
+          </div>
+          <div class="stat-item" style="display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-star" style="color: var(--primary-orange); font-size: 32px;"></i>
+            <div>
+              <strong>4.8</strong>
+              <span style="font-size: 14px; color: #666;">Rating Everywhere</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="assets/about.png" alt="Sushi Hand">
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Mood Section -->
+  <section class="food-mood container" id="menu">
+    <div class="section-header">
+      <div>
+        <div style="color: var(--primary-orange); font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+          What We Offer</div>
+        <h2>Our Food, Your Mood</h2>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn-outline"
+          style="padding: 10px; border-radius: 50%; width: 40px; height: 40px; justify-content: center;"><i
+            class="fas fa-arrow-left"></i></button>
+        <button class="btn-outline"
+          style="padding: 10px; border-radius: 50%; width: 40px; height: 40px; justify-content: center;"><i
+            class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="mood-grid">
+      <div class="mood-card">
+        <h3>Savory Bowls</h3>
+        <p style="color: #666; font-size: 14px;">Rice, pasta, or grains loaded with rich flavors.</p>
+        <img src="assets/bowl.png" alt="Savory Bowls">
+        <a href="#" style="font-weight: 600; font-size: 14px;">See Details <i class="fas fa-arrow-right"
+            style="font-size: 10px;"></i></a>
+      </div>
+      <div class="mood-card">
+        <h3>Comfort Street Eats</h3>
+        <p style="color: #666; font-size: 14px;">Sliders, wings, tacos, and pinchos.</p>
+        <img src="assets/street.png" alt="Street Eats">
+        <a href="#" style="font-weight: 600; font-size: 14px;">See Details <i class="fas fa-arrow-right"
+            style="font-size: 10px;"></i></a>
+      </div>
+      <div class="mood-card">
+        <h3>Vegetarian Delights</h3>
+        <p style="color: #666; font-size: 14px;">Flavor-forward dishes for plant lovers.</p>
+        <img src="assets/veg.png" alt="Vegetarian">
+        <a href="#" style="font-weight: 600; font-size: 14px;">See Details <i class="fas fa-arrow-right"
+            style="font-size: 10px;"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>TASTEORY</h2>
+          <p style="color: #aaa; max-width: 300px;">Crafting culinary experiences that bring people together. Taste the
+            difference today.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Socials</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <a href="contact.html" class="btn-primary" style="background: white; color: var(--text-dark);">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Tasteory. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-container">
+    <div class="float-btn btn-top" title="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <a href="https://wa.me/62895639068080" class="float-btn btn-whatsapp" target="_blank" title="Chat with us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
